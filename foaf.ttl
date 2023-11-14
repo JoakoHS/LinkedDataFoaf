@@ -1,6 +1,6 @@
-@base <http://users.dcc.uchile.cl/~ahogan/foaf.ttl> .  # ojardo
+@base <https://raw.githubusercontent.com/JoakoHS/LinkedDataFoaf/main/foaf.ttl> .
 
-@prefix jh: <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#> .  # ojo
+@prefix jh: <https://raw.githubusercontent.com/JoakoHS/LinkedDataFoaf/main/foaf.ttl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -17,16 +17,18 @@
    dc:creator <#jh> .
 
 <#jh> a foaf:Person ;
-   rdfs:label "Joaquin Herrera" ;
+   rdfs:label "Joaquín Herrera" ;
    rdfs:comment "DIE Undergraduate Student"@en , "Estudiante de Pregrado del DIE"@es ;
-   foaf:name "Joaquin Herrera" ;
-   foaf:givenName "Joaquin" ;
+   foaf:name "Joaquín Herrera" ;
+   foaf:givenName "Joaquín" ;
    foaf:familyName "Herrera" ;
-   foaf:dateOfBirth "2001-08-08"^^xsd:date ; # it would be better to put date of birth to not have to update every birthday, but hey :)
-   foaf:img <> ;
-   foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> , <https://users.dcc.uchile.cl/~dhernand/foaf.ttl#dh> , <https://users.dcc.uchile.cl/~dhernand/foaf.ttl#dh> , <https://raw.githubusercontent.com/JorgeCVuwu/watos/main/foaf.ttl#jcv> ;
-   foaf:interest dbr:Semantic_Web , dbr:Data_science , dbr:Artificial_intelligence , dbr:League_of_Legends ; 
-   social:likesMovie <http://dbpedia.org/resource/Interstellar_(film)> , dbr:Sharktopus , dbr:Dinoshark , dbr:Mega_Shark_Versus_Giant_Octopus ;
-   social:hasSpiritAnimal dbr:Dog ;
+   foaf:age 22 ; # it would be better to put date of birth to not have to update every birthday, but hey :)
+   foaf:img <https://avatars.githubusercontent.com/u/142828745?v=4> ;
+   foaf:homepage <https://www.linkedin.com/in/joaqu%C3%ADn-herrera-su%C3%A1rez> ;
+   foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> , <https://users.dcc.uchile.cl/~almorale/foaf.ttl#am> , <https://fabianvillena.cl/foaf.ttl#fv> , <https://pjaramillo.cl/foaf.ttl#pj> ;
+   foaf:interest dbr:Semantic_Web , dbr:Data_science , dbr:Artificial_intelligence ; 
+   social:likesMovie <http://dbpedia.org/resource/Interstellar_(film)> ;
+   social:hasSpiritAnimal dbr:Dolphin ;
    social:hasFavouritePlatonicSolid dbr:Dodecahedron ;
-   foaf:myersBriggs "INTP" .
+   foaf:myersBriggs "INTP" ;
+   foaf:nick "HideOnAcelga" .
